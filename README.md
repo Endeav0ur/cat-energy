@@ -1,6 +1,6 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «cat-energy»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: Sekacheva Anastasiia
 * Наставник: `Неизвестно`.
 
 ---
