@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+}
+.page {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.promo {
+  background-color: #5EAA2F;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.programs {
+  background-color: #F2F2F2;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.progress {
+  background-color: #EAEAEA;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.footer-page {
+  background-color: #F2F2F2;
+}
+/*# sourceMappingURL=style.css.map */

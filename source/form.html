@@ -29,13 +29,13 @@
         </button>
 
         <ul class="main-nav__list site-menu">
-          <li class="site-menu__item site-menu__item--current">
+          <li class="site-menu__item">
             <a class="site-menu__link" href="index.html">Главная</a>
           </li>
           <li class="site-menu__item">
             <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-menu__item">
+          <li class="site-menu__item site-menu__item--current">
             <a class="site-menu__link">Подбор программы</a>
           </li>
         </ul>
@@ -80,6 +80,7 @@
                 <input
                   class="options__input"
                   type="radio"
+                  id="slim-prog"
                   name="slim-prog"
                   value="slim"
                   checked="checked"
@@ -92,6 +93,7 @@
                 <input
                   class="options__input"
                   type="radio"
+                  id="weight-prog"
                   name="weight-prog"
                   value="weight"
                 />
@@ -103,6 +105,7 @@
                 <input
                   class="options__input"
                   type="radio"
+                  id="another-prog"
                   name="another-prog"
                   value="another"
                 />
@@ -127,7 +130,6 @@
           <input
             class="form-contact__input input"
             type="tel"
-            pattern=""
             id="owner-phone"
             placeholder="8 (960) 900-60-90"
           />
@@ -142,7 +144,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-order__add-foods">
+        <fieldset class="form-order__add-foods add-foods">
           <legend class="add-foods__titel">Дополнительно</legend>
           <ul class="add-foods__list">
             <li class="add-foods__item variant">
