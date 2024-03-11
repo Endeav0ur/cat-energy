@@ -1,10 +1,32 @@
 .promo{
-    background-color: $color-basic-green;
+    background-color: $color-light-grey;
+    background-image: url(../img/index-background-desktop\ .png);
+    background-repeat: no-repeat;
+    background-size: 320px, 302px;
 }
-h1{
-    // font-family: "Oswald";
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
+h1.promo__title{
     color: $color-white;
+}
+a.button {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: $color-green;
+    width: 280px;
+    height: 40px;
+    color: $color-white;
+    font-family: "Oswald";
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+.promo__slogan{
+    font-family: "Oswald";
+    font-size: 14px;
+    line-height: 14px;
+    color: $color-white;
+    text-transform: uppercase;
 }
