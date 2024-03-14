@@ -4,7 +4,7 @@
     text-transform: uppercase;
 }
 .form-order{
-    font-family: "Oswald";
+    font-family: $font-heading;
     color: $color-dark-grey;
     text-transform: uppercase;
 }
@@ -12,8 +12,15 @@
     color: $color-black;
 }
 .form-order__additional{
-    font-family: "Arial";
+    font-family: $font-body;
     font-size: 14px;
     line-height: 18px;
     text-transform: none;
+}
+.page-form__titel{
+    font-family: $font-heading;
+    font-size: 36px;
+    line-height: 36px;
+    color: $color-black;
+    font-weight: 400;
 }
