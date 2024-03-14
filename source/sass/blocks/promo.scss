@@ -1,20 +1,24 @@
 .promo{
     background-color: $color-light-grey;
-    background-image: url(../img/index-background-desktop\ .png);
+    background-image: url(../img/promo-picture.png);
     background-repeat: no-repeat;
     background-size: 320px, 302px;
 }
-h1.promo__title{
+.promo__title{
+    font-family: $font-heading;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
     color: $color-white;
 }
-a.button {
+.promo__button {
     display: inline-block;
     box-sizing: border-box;
     background-color: $color-green;
     width: 280px;
     height: 40px;
     color: $color-white;
-    font-family: "Oswald";
+    font-family: $font-heading;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -24,7 +28,7 @@ a.button {
     padding: 10px;
 }
 .promo__slogan{
-    font-family: "Oswald";
+    font-family: $font-heading;
     font-size: 14px;
     line-height: 14px;
     color: $color-white;
