@@ -31,7 +31,7 @@
   margin-bottom: 38px;
 }
 .programs__link {
-    display: inline-block;
+  display: inline-block;
   font-family: $font-heading;
   font-size: 16px;
   line-height: 16px;
@@ -40,4 +40,40 @@
   text-decoration: none;
   margin-bottom: 18px;
   margin-left: 19px;
+}
+@media (min-width: $breakpoint-tablet) {
+  .programs__info-slim,
+  .programs__info-fat {
+    display: block;
+    box-sizing: border-box;
+    width: 708px;
+  }
+  .programs__info-slim {
+    background-size: 200px 211px;
+    background-position: 450px;
+  }
+  .programs__info-fat {
+    background-size: 268px 200px;
+    background-position: 400px;
+  }
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 77px;
+    margin-top: 30px;
+  }
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-bottom: 48px;
+  }
+  .programs__link {
+    display: block;
+    padding-bottom: 50px;
+  }
+  .programs__link{
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

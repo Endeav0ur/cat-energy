@@ -43,24 +43,38 @@
   color: $color-white;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
   margin-bottom: 322px;
 }
 @media (min-width: $breakpoint-tablet) {
   .promo {
     background-color: $color-white;
-    background-image: none;
+    background-image: url(../img/main-picture.png);
+    background-size: 700px, 600px;
+    background-position: top 150px center;
+    min-height: 910px;
   }
   .promo__title {
     display: inline-block;
+    box-sizing: border-box;
     color: $color-black;
+    // width: 414px;
+    padding: 0;
     margin-left: 117px;
     margin-bottom: 41px;
   }
   .promo__slogan {
-    display: inline-block;
-    width: 283px;
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
     color: $color-black;
+    text-align: start;
+    margin: 0;
+    margin-bottom: 49px;
+    padding: 0;
     margin-left: 119px;
   }
+  .promo__button.button{
+    margin-left: 120px;
+  }
+
 }

@@ -7,12 +7,8 @@
   text-decoration: none;
   color: $color-black;
 }
-.site-menu__item {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 .main-nav__list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -21,6 +17,8 @@
     display: flex;
     justify-content: space-around;
     min-width: 440px;
+    padding-top: 20px;
+    margin-bottom: 62px;
   }
   .site-menu__link {
     font-family: $font-heading;
@@ -30,7 +28,10 @@
   }
 }
 @media (min-width: $breakpoint-desktop) {
-  .main-nav__list {
+  .main-nav__list.site-menu {
     margin-top: 69px;
+  }
+  .page-header__main-nav-button{
+    margin: 0;
   }
 }

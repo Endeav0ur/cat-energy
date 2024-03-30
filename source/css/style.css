@@ -3,16 +3,14 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
 }
 @font-face {
   font-family: "Oswald";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
 .page {
   font-family: "Arial", sans-serif;
@@ -87,12 +85,15 @@
     height: 22px;
     margin-top: 75px;
   }
+
+  .page-header__main-nav {
+    margin-bottom: 110px;
+  }
 }
 .promo {
   min-height: 460px;
   background-color: #ffffff;
-  background-image: url(../img/main-picture.png),
-    url(../img/background/promo-picture.png);
+  background-image: url(../img/main-picture.png), url(../img/background/promo-picture.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 95%, 100%;
   background-origin: border-box;
@@ -136,26 +137,41 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
   margin-bottom: 322px;
 }
 
 @media (min-width: 768px) {
   .promo {
     background-color: #ffffff;
-    background-image: none;
+    background-image: url(../img/main-picture.png);
+    background-size: 700px, 600px;
+    background-position: top 150px center;
+    min-height: 910px;
   }
 
   .promo__title {
     display: inline-block;
+    box-sizing: border-box;
     color: #000000;
+    padding: 0;
     margin-left: 117px;
     margin-bottom: 41px;
   }
 
   .promo__slogan {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
     color: #000000;
+    text-align: start;
+    margin: 0;
+    margin-bottom: 49px;
+    padding: 0;
     margin-left: 119px;
+  }
+
+  .promo__button.button {
+    margin-left: 120px;
   }
 }
 .programs__info-slim,
@@ -206,6 +222,48 @@
   margin-left: 19px;
 }
 
+@media (min-width: 768px) {
+  .programs__info-slim,
+.programs__info-fat {
+    display: block;
+    box-sizing: border-box;
+    width: 708px;
+  }
+
+  .programs__info-slim {
+    background-size: 200px 211px;
+    background-position: 450px;
+  }
+
+  .programs__info-fat {
+    background-size: 268px 200px;
+    background-position: 400px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 77px;
+    margin-top: 30px;
+  }
+
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-bottom: 48px;
+  }
+
+  .programs__link {
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .progress {
   background-color: #eaeaea;
 }
@@ -214,8 +272,9 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: #68b738;
   font-weight: 400;
+  margin-left: 20px;
 }
 
 .instructions__title {
@@ -272,8 +331,7 @@
   color: #000000;
 }
 
-.card__heading,
-.show-more__heading {
+.card__heading, .show-more__heading {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -391,23 +449,19 @@
   color: #000000;
 }
 
-.site-menu__item {
+.main-nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-}
-
 @media (min-width: 768px) {
-  .main-nav__list {
+  .main-nav__list.site-menu {
     display: flex;
     justify-content: space-around;
     min-width: 440px;
-    margin-top: 42px;
+    padding-top: 20px;
+    margin-bottom: 62px;
   }
 
   .site-menu__link {
@@ -418,8 +472,12 @@
   }
 }
 @media (min-width: 1440px) {
-  .main-nav__list {
+  .main-nav__list.site-menu {
     margin-top: 69px;
+  }
+
+  .page-header__main-nav-button {
+    margin: 0;
   }
 }
 .page__body {
