@@ -1,19 +1,43 @@
-.programs{
-    background-color: $color-light-grey;
+.programs__info-slim,
+.programs__info-fat {
+  width: 280px;
+  background-color: $color-light-grey;
+  background-image: url(../img/cat_back.png);
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  margin: 0 auto;
 }
-.programs__title{
-    font-family: $font-heading;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 37px;
-    color: $color-black;
-    text-transform: uppercase;
+.programs__info-fat {
+  background-image: url(../img/tiger_back.png);
+  background-size: 67px 50px;
+  background-position: top 21px;
 }
-.programs__link{
-    font-family: $font-heading;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: $color-black;
-    text-decoration: none;
+.programs__title {
+  font-family: $font-heading;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  color: $color-black;
+  text-transform: uppercase;
+  margin-left: 90px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+.programs__description {
+  display: inline-block;
+  width: 227px;
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 38px;
+}
+.programs__link {
+    display: inline-block;
+  font-family: $font-heading;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-black;
+  text-decoration: none;
+  margin-bottom: 18px;
+  margin-left: 19px;
 }

@@ -1,7 +1,22 @@
-.instructions__title{
-    font-family: $font-heading;
-    font-size: 36px;
-    line-height: 40px;
-    color: $color-black;
-    font-weight: 400;
+.instructions__title {
+  font-family: $font-heading;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-black;
+  font-weight: 400;
+}
+.instructions {
+  width: 279px;
+  margin: 0 auto;
+}
+.instructions__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.instructions__item:not(:last-child){
+    margin-bottom: 20px;
+}
+.instructions__item:last-child{
+  margin-bottom: 49px;
 }

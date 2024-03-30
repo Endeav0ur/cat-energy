@@ -3,14 +3,16 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
 }
 @font-face {
   font-family: "Oswald";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
 }
 .page {
   font-family: "Arial", sans-serif;
@@ -21,11 +23,80 @@
   font-weight: 400;
 }
 
+.page-header__main-nav {
+  display: flex;
+  justify-content: space-around;
+  min-width: 320px;
+  background-color: #ffffff;
+}
+
+.page-header__logo.logo {
+  background-image: url(../img/logo/logo-mobile.svg);
+  width: 34px;
+  height: 38px;
+  margin-top: 10px;
+}
+
+.page-header__logo.title {
+  background-image: url(../img/logo/logo-title.svg);
+  margin-top: 23px;
+  width: 101px;
+  height: 18px;
+}
+
+.page-header__main-nav-button {
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__main-nav {
+    min-width: 708px;
+  }
+
+  .page-header__logo.logo {
+    background-image: url(../img/logo/logo-tablet.svg);
+    width: 61px;
+    height: 51px;
+    margin-top: 24px;
+  }
+
+  .page-header__logo.title {
+    background-image: url(../img/logo/logo-title.svg);
+    background-repeat: no-repeat;
+    width: 103px;
+    height: 20px;
+    margin-top: 43px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-header__logo.logo {
+    background-image: url(../img/logo/logo-desktop.svg);
+    width: 71px;
+    height: 59px;
+    margin-top: 53px;
+  }
+
+  .page-header__logo.title {
+    background-image: url(../img/logo/logo-title.svg);
+    background-repeat: no-repeat;
+    width: 119px;
+    height: 22px;
+    margin-top: 75px;
+  }
+}
 .promo {
-  background-color: #D9D9D9;
-  background-image: url(../img/background/promo-picture.png);
-  background-repeat: no-repeat;
-  background-size: 320px, 302px;
+  min-height: 460px;
+  background-color: #ffffff;
+  background-image: url(../img/main-picture.png),
+    url(../img/background/promo-picture.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 95%, 100%;
+  background-origin: border-box;
+  background-position: bottom 30px center, 0px 0px;
 }
 
 .promo__title {
@@ -34,12 +105,16 @@
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .promo__button {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
-  background-color: #68B738;
+  background-color: #68b738;
   width: 280px;
   height: 40px;
   color: #ffffff;
@@ -51,6 +126,7 @@
   text-decoration: none;
   text-align: center;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .promo__slogan {
@@ -59,10 +135,43 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 322px;
 }
 
-.programs {
-  background-color: #D9D9D9;
+@media (min-width: 768px) {
+  .promo {
+    background-color: #ffffff;
+    background-image: none;
+  }
+
+  .promo__title {
+    display: inline-block;
+    color: #000000;
+    margin-left: 117px;
+    margin-bottom: 41px;
+  }
+
+  .promo__slogan {
+    color: #000000;
+    margin-left: 119px;
+  }
+}
+.programs__info-slim,
+.programs__info-fat {
+  width: 280px;
+  background-color: #d9d9d9;
+  background-image: url(../img/cat_back.png);
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  margin: 0 auto;
+}
+
+.programs__info-fat {
+  background-image: url(../img/tiger_back.png);
+  background-size: 67px 50px;
+  background-position: top 21px;
 }
 
 .programs__title {
@@ -72,19 +181,33 @@
   line-height: 37px;
   color: #000000;
   text-transform: uppercase;
+  margin-left: 90px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.programs__description {
+  display: inline-block;
+  width: 227px;
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 38px;
 }
 
 .programs__link {
+  display: inline-block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  margin-bottom: 18px;
+  margin-left: 19px;
 }
 
 .progress {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 
 .progress__title {
@@ -103,6 +226,25 @@
   font-weight: 400;
 }
 
+.instructions {
+  width: 279px;
+  margin: 0 auto;
+}
+
+.instructions__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.instructions__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.instructions__item:last-child {
+  margin-bottom: 49px;
+}
+
 .contacts__address {
   font-size: 14px;
   line-height: 20px;
@@ -119,7 +261,7 @@
 }
 
 .footer-page {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .page-main__title {
@@ -130,7 +272,8 @@
   color: #000000;
 }
 
-.card__heading, .show-more__heading {
+.card__heading,
+.show-more__heading {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -148,7 +291,7 @@
 }
 
 .show-more__button.button {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #444444;
 }
 
@@ -178,6 +321,7 @@
 
 .promo-gift {
   background-image: url(../img/background/Cat-bag.png);
+  background-color: #68b738;
   width: 280px;
   height: 290px;
 }
@@ -190,7 +334,7 @@
 }
 
 .button {
-  background-color: #68B738;
+  background-color: #68b738;
   width: 280px;
   height: 40px;
   color: #ffffff;
@@ -245,5 +389,40 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.site-menu__item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+    min-width: 440px;
+    margin-top: 42px;
+  }
+
+  .site-menu__link {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1440px) {
+  .main-nav__list {
+    margin-top: 69px;
+  }
+}
+.page__body {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

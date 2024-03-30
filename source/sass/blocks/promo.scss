@@ -1,36 +1,66 @@
-.promo{
-    background-color: $color-light-grey;
-    background-image: url(../img/background/promo-picture.png);
-    background-repeat: no-repeat;
-    background-size: 320px, 302px;
+.promo {
+  min-height: 460px;
+  background-color: $color-white;
+  background-image: url(../img/main-picture.png),
+    url(../img/background/promo-picture.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 95%, 100%;
+  background-origin: border-box;
+  background-position: bottom 30px center, 0px 0px;
 }
-.promo__title{
-    font-family: $font-heading;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-    color: $color-white;
+.promo__title {
+  font-family: $font-heading;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $color-white;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 .promo__button {
-    display: inline-block;
-    box-sizing: border-box;
-    background-color: $color-green;
-    width: 280px;
-    height: 40px;
-    color: $color-white;
-    font-family: $font-heading;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
+  display: block;
+  box-sizing: border-box;
+  background-color: $color-green;
+  width: 280px;
+  height: 40px;
+  color: $color-white;
+  font-family: $font-heading;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
 }
-.promo__slogan{
-    font-family: $font-heading;
-    font-size: 14px;
-    line-height: 14px;
-    color: $color-white;
-    text-transform: uppercase;
+.promo__slogan {
+  font-family: $font-heading;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 322px;
+}
+@media (min-width: $breakpoint-tablet) {
+  .promo {
+    background-color: $color-white;
+    background-image: none;
+  }
+  .promo__title {
+    display: inline-block;
+    color: $color-black;
+    margin-left: 117px;
+    margin-bottom: 41px;
+  }
+  .promo__slogan {
+    display: inline-block;
+    width: 283px;
+    color: $color-black;
+    margin-left: 119px;
+  }
 }

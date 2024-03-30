@@ -1,9 +1,36 @@
-.site-menu__link{
+.site-menu__link {
+  font-family: $font-heading;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-black;
+}
+.site-menu__item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: $breakpoint-tablet) {
+  .main-nav__list.site-menu {
+    display: flex;
+    justify-content: space-around;
+    min-width: 440px;
+  }
+  .site-menu__link {
     font-family: $font-heading;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $color-black;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+@media (min-width: $breakpoint-desktop) {
+  .main-nav__list {
+    margin-top: 69px;
+  }
 }
