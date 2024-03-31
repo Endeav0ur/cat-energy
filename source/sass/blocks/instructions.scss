@@ -12,11 +12,34 @@
 .instructions__list {
   list-style-type: none;
   margin: 0;
+  margin-left: 100px;
   padding: 0;
 }
-.instructions__item:not(:last-child){
-    margin-bottom: 20px;
+.instructions__item:not(:last-child) {
+  margin-bottom: 20px;
 }
-.instructions__item:last-child{
+.instructions__item:last-child {
   margin-bottom: 49px;
+}
+.instructions__item--benefit {
+  background-image: url(../img/list.svg);
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+@media (min-width: $breakpoint-tablet) {
+  .instructions {
+    width: 100%;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .instructions__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .instructions__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
 }

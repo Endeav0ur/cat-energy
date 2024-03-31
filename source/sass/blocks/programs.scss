@@ -46,7 +46,8 @@
   .programs__info-fat {
     display: block;
     box-sizing: border-box;
-    width: 708px;
+    width: 100%;
+    margin: 0 30px;
   }
   .programs__info-slim {
     background-size: 200px 211px;
@@ -71,8 +72,6 @@
   .programs__link {
     display: block;
     padding-bottom: 50px;
-  }
-  .programs__link{
     font-size: 20px;
     line-height: 30px;
   }
