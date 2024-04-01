@@ -5,10 +5,7 @@
   color: $color-black;
   font-weight: 400;
 }
-.instructions {
-  width: 279px;
-  margin: 0 auto;
-}
+
 .instructions__list {
   list-style-type: none;
   margin: 0;
@@ -21,10 +18,53 @@
 .instructions__item:last-child {
   margin-bottom: 49px;
 }
-.instructions__item--benefit {
+.instructions__item {
+  position: relative;
+  width: 200px;
+}
+.instructions__item--benefit::before {
+  position: absolute;
+  content: "";
+  display: block;
   background-image: url(../img/list.svg);
   background-size: 60px 60px;
+  width: 60px;
+  height: 60px;
   background-repeat: no-repeat;
+  left: -100px;
+}
+.instructions__item--fast::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../img/group2.svg);
+  background-size: 60px 60px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  left: -100px;
+}
+.instructions__item--food::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../img/group3.svg);
+  background-size: 60px 60px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  left: -100px;
+}
+.instructions__item--result::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(../img/group4.svg);
+  background-size: 60px 60px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  left: -100px;
 }
 @media (min-width: $breakpoint-tablet) {
   .instructions {
@@ -41,5 +81,22 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+  }
+}
+@media (min-width: $breakpoint-desktop) {
+  .instructions {
+    width: 100%;
+    padding-left: 110px;
+    padding-right: 106px;
+  }
+  .instructions__title {
+    margin-bottom: 32px;
+    padding: 0;
+  }
+  .instructions__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
   }
 }

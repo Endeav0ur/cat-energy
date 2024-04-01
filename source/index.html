@@ -11,7 +11,7 @@
 
 <body class="page__body">
   <header class="page__header page-header">
-    <nav class="page-header__main-nav">
+    <nav class="page-header__main-nav container">
       <a class="page-header__logo logo" href="index.html">
       </a>
       <a class="page-header__logo title">
@@ -41,11 +41,12 @@
     <section class="page-main__section promo">
       <h1 class="promo__title">Функциональное <br>питание для котов</h1>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
+      <img class="promo__main-picture" src="img/main-picture.png" alt="Баннка корма" width="280" height="270">
       <a class="promo__button button" href="form.html">Подобрать программу</a>
     </section>
 
-    <section class="page-main__section programs">
-      <h2 class="visually-hidden">Варианты программы</h2>
+    <section class="page-main__section programs container">
+      <!-- <h2 class="visually-hidden">Варианты программы</h2> -->
       <article class="programs__info-slim">
         <h3 class="programs__title">Похудение</h3>
         <p class="programs__description">
@@ -65,7 +66,7 @@
       </article>
     </section>
 
-    <section class="page-main__section instructions">
+    <section class="page-main__section instructions container">
       <h2 class="instructions__title">Как это работает</h2>
       <ul class="instructions__list">
         <li class="instructions__item instructions__item--benefit">
@@ -86,6 +87,7 @@
     </section>
 
     <section class="page-main__section progress">
+      <div class="progress container">
       <h2 class="progress__title">Живой пример</h2>
       <p class="progress__text">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -117,11 +119,12 @@
           <button class="switcher__button button" type="button">Стало</button>
         </div>
       </div>
+      </div>
     </section>
 
     <section class="page-main__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__sales">
+      <div class="contacts__sales container">
         <h3 class="contacts__text">Приглашаем к сотрудничеству дилеров!</h3>
         <p class="contacts__address">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -132,6 +135,7 @@
   </main>
 
   <footer class="page__footer footer-page">
+    <div class="footer-page container">
     <a class="footer-page__logo footer-logo">
       <img class="footer-logo__img" src="img/logo/footer-logo2.svg" width="128" height="24" alt="Логотип Кет энерджи" />
     </a>
@@ -157,6 +161,7 @@
         <img class="copyrights__logo" src="img/logo/htmlacademy-logo.svg" width="27" height="34"
           alt="Логотип Академии" />
       </a>
+    </div>
     </div>
   </footer>
 </body>
