@@ -5,7 +5,43 @@
   font-family: $font-heading;
   font-size: 36px;
   line-height: 40px;
-  color: $color-green;
+  color: $color-black;
   font-weight: 400;
-  margin-left: 20px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding-top: 25px;
+}
+.progress__text{
+  width: 280px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.progress__results{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.progress__numbers{
+  font-family: Oswald;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.progress__description{
+  width: 77px;
+  font-size: 12px;
+  line-height: 12px;
+  padding-top: 7px;
+}
+.progress__price{
+  font-family: Oswald;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-black;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
 }
