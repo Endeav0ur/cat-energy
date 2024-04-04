@@ -13,3 +13,8 @@
 .progress__transformation{
    padding-bottom: 40px;
 }
+@media (min-width: $breakpoint-tablet){
+    .progress__transformation{
+        background-color: $color-grey;
+    }
+}
