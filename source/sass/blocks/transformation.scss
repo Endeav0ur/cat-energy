@@ -17,4 +17,17 @@
     .progress__transformation{
         background-color: $color-grey;
     }
+    .transformation__switcher{
+        width: 592px;
+        justify-content: space-around;
+        gap: 13px;
+    }
+    .switcher__button{
+        font-size: 20px;
+        line-height: 30px;
+        width: 70px;
+    }
+    .switcher-range{
+        width: 100%;
+    }
 }

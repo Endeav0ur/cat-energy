@@ -486,6 +486,19 @@
     grid-template-rows: auto auto;
     row-gap: 37px;
   }
+
+  .instructions__item {
+    width: 250px;
+  }
+
+  .instructions__item--benefit {
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: 112px 240px;
+    background-position: right;
+    width: 230px;
+    height: 280px;
+  }
 }
 @media (min-width: 1440px) {
   .instructions {
@@ -525,6 +538,32 @@
   display: flex;
 }
 
+@media (min-width: 768px) {
+  .contacts__sales.container {
+    width: 628px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+
+  .contacts__text {
+    font-size: 20px;
+    line-height: 26px;
+    width: 171px;
+  }
+
+  .contacts__address {
+    width: 159px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .visually-hidden {
+    margin: 0;
+  }
+}
 .footer-page {
   background-color: #f2f2f2;
   min-height: 236px;
@@ -540,6 +579,7 @@
 .footer-page__social.social {
   display: flex;
   width: 130px;
+  height: 23px;
   justify-content: space-around;
   gap: 35px;
   margin: 0 auto;
@@ -579,6 +619,34 @@
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .footer-page .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 708px;
+    height: 34px;
+  }
+
+  .footer-page__logo {
+    height: 24px;
+  }
+
+  .footer-page__copyrights {
+    width: 163px;
+    margin: 0;
+  }
+
+  .footer-page__social.social {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .footer-logo {
+    margin: 0;
+    padding: 0;
+  }
+}
 .page-main__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -681,6 +749,22 @@
 @media (min-width: 768px) {
   .progress__transformation {
     background-color: #eaeaea;
+  }
+
+  .transformation__switcher {
+    width: 592px;
+    justify-content: space-around;
+    gap: 13px;
+  }
+
+  .switcher__button {
+    font-size: 20px;
+    line-height: 30px;
+    width: 70px;
+  }
+
+  .switcher-range {
+    width: 100%;
   }
 }
 .page-form__description {

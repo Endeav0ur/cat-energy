@@ -1,16 +1,39 @@
-.contacts__address{
-    font-size: 14px;
+.contacts__address {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-dark-grey;
+}
+.contacts__text {
+  font-family: $font-heading;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-black;
+}
+.contacts__sales.container {
+  display: flex;
+}
+@media (min-width: $breakpoint-tablet) {
+  .contacts__sales.container {
+    width: 628px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+  .contacts__text {
+    font-size: 20px;
+    line-height: 26px;
+    width: 171px;
+  }
+  .contacts__address {
+    width: 159px;
+    font-size: 16px;
     line-height: 20px;
-    color: $color-dark-grey;
-}
-.contacts__text{
-font-family: $font-heading;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-text-transform: uppercase;
-color: $color-black;
-}
-.contacts__sales.container{
-    display: flex;
+    text-align: right;
+  }
+  .visually-hidden{
+    margin: 0;
+  }
 }
