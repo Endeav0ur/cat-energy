@@ -1,6 +1,6 @@
 .footer-page {
   background-color: $color-basic-grey;
-  min-height: 236px;
+  min-height: auto;
 }
 .footer-logo {
   display: flex;
@@ -42,7 +42,7 @@
 .footer-page__copyrights {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 26px;
+  padding-bottom: 22px;
   align-items: center;
 }
 @media (min-width: $breakpoint-tablet) {
@@ -52,6 +52,8 @@
     align-items: center;
     width: 708px;
     height: 34px;
+    padding-top: 58px;
+    padding-bottom: 55px;
   }
   .footer-page__logo {
     height: 24px;
