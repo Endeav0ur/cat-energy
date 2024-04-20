@@ -35,3 +35,8 @@
         margin: 0 auto;
     }
 }
+@media (min-width: $breakpoint-desktop){
+    .progress__transformation{
+        background-color: $color-basic-grey;
+    }
+}
