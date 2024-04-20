@@ -29,12 +29,19 @@
   }
   .contacts__address {
     width: 160px;
+    height: 80px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
     margin: 0;
+    display: block;
   }
-  .visually-hidden{
+  .address-city {
+    display: block;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  .visually-hidden {
     margin: 0;
   }
 }

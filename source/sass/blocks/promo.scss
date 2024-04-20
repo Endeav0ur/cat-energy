@@ -86,3 +86,46 @@
     margin-left: 120px;
   }
 }
+@media (min-width: $breakpoint-desktop) {
+  .promo {
+    background-color: $color-white;
+    min-height: 555px;
+    position: relative;
+  }
+  .promo::after{
+    position: absolute;
+    content: "";
+    background-image: url(../img/background/promo-picture-table.png);
+    background-size: 720px 694px ;
+    width: 720px;
+    height:  694px;
+    background-repeat: no-repeat;
+    top: -130px;
+    right: -100px;
+  }
+  .promo__main-picture {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    right: 200px;
+    bottom: 54px;
+  }
+  .promo__button.button {
+    position: static;
+    bottom: 185px;
+    width: 244px;
+    height: 54px;
+  }
+  .promo__title {
+    margin-left: 80px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    margin-top: 111px;
+  }
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 52px;
+  }
+}

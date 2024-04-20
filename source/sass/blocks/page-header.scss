@@ -49,17 +49,16 @@
   }
 }
 @media (min-width: $breakpoint-desktop) {
+  .page-header__main-nav{
+    justify-content: space-between;
+  }
   .page-header__logo.logo {
-    background-image: url(../img/logo/logo-desktop.svg);
-    width: 71px;
+    background-image: url(../img/logo/logo-desktop-big.svg);
+    width: 202px;
     height: 59px;
     margin-top: 53px;
   }
   .page-header__logo.title {
-    background-image: url(../img/logo/logo-title.svg);
-    background-repeat: no-repeat;
-    width: 119px;
-    height: 22px;
-    margin-top: 75px;
+    display: none;
   }
 }

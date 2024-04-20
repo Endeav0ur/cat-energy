@@ -52,7 +52,6 @@
   .progress__title {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 43px;
   }
   .progress__text {
     font-size: 16px;
@@ -60,23 +59,23 @@
     width: 100%;
     margin-bottom: 54px;
   }
-  .progress__example{
+  .progress__example {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
   }
-  .progress__results{
+  .progress__results {
     width: 366x;
     gap: 130px;
   }
-  .progress__price{
+  .progress__price {
     display: flex;
     flex-direction: column;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
   }
-  .progress__numbers{
+  .progress__numbers {
     font-size: 30px;
     line-height: 37px;
   }
@@ -84,5 +83,30 @@
     font-size: 14px;
     line-height: 14px;
   }
-  
+}
+@media (min-width: $breakpoint-desktop) {
+  .progress__title {
+    margin-bottom: 79px;
+    padding-top: 70px;
+  }
+  .progress__text {
+    width: 436px;
+    height: 96px;
+    margin-bottom: 69px;
+  }
+  .progress__example {
+    display: grid;
+    row-gap: 55px;
+  }
+  .progress__price {
+    display: flex;
+    flex-direction: row;
+    gap: 53px;
+  }
+  .progress__results {
+    gap: 42px;
+  }
+  .progress__item {
+    width: 162px;
+  }
 }

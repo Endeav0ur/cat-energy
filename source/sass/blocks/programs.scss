@@ -74,6 +74,7 @@
   .page-main__section.programs {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 71px;
   }
   .programs__info-slim,
   .programs__info-fat {
@@ -94,5 +95,9 @@
   .programs__info-fat {
     background-size: 134px 100px;
     background-position: 33px 47px;
+  }
+  .programs__link{
+    margin-bottom: 0;
+    padding-bottom: 55px;
   }
 }
