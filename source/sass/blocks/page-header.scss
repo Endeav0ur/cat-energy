@@ -7,22 +7,10 @@
   min-width: 320px;
   background-color: $color-white;
 }
-.page-header__logo.logo {
-  background-image: url(../img/logo/logo-mobile.svg);
-  width: 34px;
-  height: 38px;
-  margin-top: 10px;
-}
-.page-header__logo.title {
-  background-image: url(../img/logo/logo-title.svg);
+
+.page-header__main-nav-button {
   margin-top: 24px;
- margin-bottom: 24px;
-  width: 101px;
-  height: 18px;
-}
-.page-header__main-nav-button{
-    margin-top: 24px;
-    position: relative;
+  position: relative;
 }
 // .page-header__toggle {
 //   background-image: url(../img/logo/logo-burger.svg);
@@ -36,31 +24,12 @@
   .page-header__toggle {
     display: none;
   }
-  .page-header__logo.logo {
-    background-image: url(../img/logo/logo-tablet.svg);
-    width: 61px;
-    height: 51px;
-    margin-top: 24px;
-  }
-  .page-header__logo.title {
-    background-image: url(../img/logo/logo-title.svg);
-    background-repeat: no-repeat;
-    width: 103px;
-    height: 20px;
-    margin-top: 43px;
-  }
 }
 @media (min-width: $breakpoint-desktop) {
-  .page-header__main-nav{
+  .page-header__main-nav {
     justify-content: space-between;
   }
-  .page-header__logo.logo {
-    background-image: url(../img/logo/logo-desktop-big.svg);
-    width: 202px;
-    height: 59px;
-    margin-top: 53px;
-  }
-  .page-header__logo.title {
-    display: none;
+  .page-header__main-nav-button {
+    margin: 0;
   }
 }

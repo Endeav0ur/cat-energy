@@ -1,0 +1,39 @@
+.logo {
+  background-image: url(../img/logo/logo-mobile.svg);
+  width: 34px;
+  height: 38px;
+  margin-top: 10px;
+}
+.logo-title {
+  background-image: url(../img/logo/logo-title.svg);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 101px;
+  height: 18px;
+}
+@media (min-width: $breakpoint-tablet) {
+  .logo {
+    background-image: url(../img/logo/logo-tablet.svg);
+    width: 61px;
+    height: 51px;
+    margin-top: 24px;
+  }
+  .logo-title {
+    background-image: url(../img/logo/logo-title.svg);
+    background-repeat: no-repeat;
+    width: 103px;
+    height: 20px;
+    margin-top: 43px;
+  }
+}
+@media (min-width: $breakpoint-desktop) {
+  .logo {
+    background-image: url(../img/logo/logo-desktop-big.svg);
+    width: 202px;
+    height: 59px;
+    margin-top: 53px;
+  }
+  .logo-title {
+    display: none;
+  }
+}

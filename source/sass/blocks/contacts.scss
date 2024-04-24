@@ -11,11 +11,11 @@
   text-transform: uppercase;
   color: $color-black;
 }
-.contacts__sales.container {
+.contacts__sales {
   display: flex;
 }
 @media (min-width: $breakpoint-tablet) {
-  .contacts__sales.container {
+  .contacts__sales{
     width: 628px;
     justify-content: space-between;
     margin: 0 auto;
@@ -36,12 +36,10 @@
     margin: 0;
     display: block;
   }
-  .address-city {
+  .contacts-city {
     display: block;
     padding-top: 20px;
     box-sizing: border-box;
   }
-  .visually-hidden {
-    margin: 0;
-  }
+  
 }

@@ -9,30 +9,31 @@
 
 <body class="page__body">
   <header class="page__header page-header">
-    <nav class="page-header__main-nav">
+    <nav class="page-header__main-nav container ">
       <a class="page-header__logo logo" href="index.html">
-        <img class="logo__img" src="img/logo/logo-mobile.svg" width=" 34" height="38" alt="лого Кэт Энерджи" />
-        <img class="logo__title" src="img/logo/logo-title.svg" width="101" height="18" alt="Кэт энерджи" />
+      </a>
+      <a class="page-header__logo logo-title" href="index.html">
       </a>
 
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-
-      <ul class="main-nav__list site-menu">
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-menu__item site-menu__item--current">
-          <a class="site-menu__link">Подбор программы</a>
-        </li>
-      </ul>
+      <div class="page-header__main-nav-button">
+        <ul class="main-nav__list site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-menu__item site-menu__item--current">
+            <a class="site-menu__link">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <main class="page__main page-form">
+  <main class="page__main page-form  container">
     <h1 class="page-form__titel">Подбор программы</h1>
     <p class="page-form__description">
       Заполните анкету, и мы подберем программу питания для вашего кота
@@ -139,6 +140,7 @@
   </main>
 
   <footer class="page__footer footer-page">
+    <div class="footer-page-container">
     <a class="footer-page__logo footer-logo" href="index.html">
       <img class="footer-logo__img" src="img/logo/footer-logo2.svg" width="128" height="24" alt="Логотип Кет энерджи" />
     </a>
@@ -165,7 +167,7 @@
           alt="Логотип Академии" />
       </a>
     </div>
+    </div>
   </footer>
 </body>
-
 </html>
