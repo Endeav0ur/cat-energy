@@ -11,29 +11,31 @@
 
 <body class="page__body">
   <header class="page__header page-header">
-    <nav class="page-header__main-nav container">
+    <nav class="page-header__main-nav">
+      <div class="page-header-bar">
         <a class="page-header__logo logo" href="index.html">
         </a>
         <a class="page-header__logo logo-title" href="index.html">
         </a>
 
-      <div class="page-header__main-nav-button">
+        <!-- <div class="page-header__main-nav-button"> -->
         <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-
-        <ul class="main-nav__list site-menu">
-          <li class="site-menu__item site-menu__item--current">
-            <a class="site-menu__link">Главная</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
       </div>
+
+      <ul class="main-nav__list site-menu">
+        <li class="site-menu__item site-menu__item--current">
+          <a class="site-menu__link">Главная</a>
+        </li>
+        <li class="site-menu__item">
+          <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-menu__item">
+          <a class="site-menu__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+      <!-- </div> -->
     </nav>
   </header>
 
@@ -88,31 +90,31 @@
 
     <section class="page-main__section progress">
       <!-- <div class="progress container"> -->
-        <div class="progress-transformation">
-          <div class="progress-example">
-        <h2 class="progress__title">Живой пример</h2>
-        <p class="progress__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="progress__example">
-          <dl class="progress__results">
-            <div class="progress__item">
-              <dt class="progress__numbers">5 <span>кг</span></dt>
-              <dd class="progress__description">снижение веса</dd>
-            </div>
-            <div class="progress__item">
-              <dt class="progress__numbers">60 <span>дней</span></dt>
-              <dd class="progress__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="progress__price">
-            <span class="progress__expenses"> Затраты на питание:</span>
-            <span class="progress__sum">15 000 РУБ.</span>
+      <div class="progress-transformation">
+        <div class="progress-example">
+          <h2 class="progress__title">Живой пример</h2>
+          <p class="progress__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-        </div>
+          <div class="progress__example">
+            <dl class="progress__results">
+              <div class="progress__item">
+                <dt class="progress__numbers">5 <span>кг</span></dt>
+                <dd class="progress__description">снижение веса</dd>
+              </div>
+              <div class="progress__item">
+                <dt class="progress__numbers">60 <span>дней</span></dt>
+                <dd class="progress__description">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="progress__price">
+              <span class="progress__expenses"> Затраты на питание:</span>
+              <span class="progress__sum">15 000 РУБ.</span>
+            </p>
           </div>
+        </div>
 
         <div class="progress__transformation transformation">
           <img class="transformation__fat-cat" src="img/cat-fat.png" width="280" height="232"
@@ -128,7 +130,7 @@
       </div>
       <!-- </div> -->
     </section>
- 
+
 
     <section class="page-main__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>

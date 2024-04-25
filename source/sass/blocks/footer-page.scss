@@ -6,6 +6,8 @@
   width: 281px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 .footer-logo {
   display: flex;
@@ -22,6 +24,7 @@
 @media (min-width: $breakpoint-tablet) {
   .footer-page-container {
     display: flex;
+    flex-direction: row;
     width: 708px;
     justify-content: space-around;
     align-items: center;
@@ -43,5 +46,12 @@
   .footer-logo {
     margin: 0;
     padding: 0;
+  }
+}
+@media (min-width: $breakpoint-desktop){
+  .footer-page-container{
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

@@ -2,24 +2,21 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+}
+.page-header-bar {
   display: flex;
   justify-content: space-around;
-  min-width: 320px;
   background-color: $color-white;
 }
-
-.page-header__main-nav-button {
+.page-header__toggle {
+  background-image: url(../img/logo/logo-burger.svg);
+  background-color: $color-white;
+  background-repeat: no-repeat;
+  border: none;
+  width: 24px;
+  height: 20px;
   margin-top: 24px;
-  position: relative;
 }
-// .page-header__toggle {
-//   background-image: url(../img/logo/logo-burger.svg);
-//   background-color: $color-white;
-//   border: none;
-//   width: 24px;
-//   height: 16px;
-//   margin-top: 24px;
-// }
 @media (min-width: $breakpoint-tablet) {
   .page-header__toggle {
     display: none;
