@@ -92,17 +92,17 @@
     min-height: 555px;
     position: relative;
   }
-  .promo::after{
-    position: absolute;
-    content: "";
-    background-image: url(../img/background/promo-picture-table.png);
-    background-size: 720px 694px ;
-    width: 720px;
-    height:  694px;
-    background-repeat: no-repeat;
-    top: -130px;
-    right: -100px;
-  }
+  // .promo::after{
+  //   position: absolute;
+  //   content: "";
+  //   background-image: url(../img/background/promo-picture-table.png);
+  //   background-size: 720px 694px ;
+  //   width: 720px;
+  //   height:  694px;
+  //   background-repeat: no-repeat;
+  //   top: -130px;
+  //   right: -100px;
+  // }
   .promo__main-picture {
     width: 552px;
     height: 499px;

@@ -11,20 +11,24 @@
 
 <body class="page__body">
   <header class="page__header page-header">
-    <nav class="page-header__main-nav">
-      <div class="page-header-bar">
-        <a class="page-header__logo logo" href="index.html">
+    <nav class="page-header__main-nav--open">
+      <div class="page-header__bar">
+        <a class="page-header__logo" href="index.html">
+          <!-- <img class="page-header__logo logo" src="./img/logo/logo-mobile.svg" alt="Логотип мобилльнной версии"
+            width="33" height="37"> -->
+            <img class="page-header__logo logo" src="./img/logo/logo-tablet.svg" alt="Логотип планшетной версии"
+            width="61" height="37">
+            <!-- <img class="page-header__logo logo" src="./img/logo/logo-desktop.svg" alt="Логотип десктопной версии"
+            width="202" height="59"> -->
+          <img class="page-header__logo logo-brand" src="./img/logo/logo-title.svg" alt="Название Кэт Энерджи"
+            width="101" height="18">
         </a>
-        <a class="page-header__logo logo-title" href="index.html">
-        </a>
-
-        <!-- <div class="page-header__main-nav-button"> -->
         <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
 
-      <ul class="main-nav__list site-menu">
+      <ul class="page-header__list site-menu">
         <li class="site-menu__item site-menu__item--current">
           <a class="site-menu__link">Главная</a>
         </li>
@@ -35,7 +39,6 @@
           <a class="site-menu__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
-      <!-- </div> -->
     </nav>
   </header>
 
