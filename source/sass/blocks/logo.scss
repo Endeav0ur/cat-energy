@@ -1,6 +1,9 @@
 .logo {
   margin-right: 56px;
 }
+.logo-brand {
+  padding-bottom: 5px;
+}
 
 @media (min-width: $breakpoint-tablet) {
   .logo {
@@ -9,7 +12,7 @@
 }
 
 @media (min-width: $breakpoint-desktop) {
-  .logo{
+  .logo {
     margin-right: 15px;
   }
   .logo-brand {

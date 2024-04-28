@@ -31,10 +31,12 @@
     flex-direction: row;
     justify-content: space-around;
     width: 440px;
+    height: 36px;
     border: none;
-    padding-top: 18px;
   }
   .site-menu__item {
+    padding-top: 18px;
+    padding-bottom: 18px;
     border: none;
   }
   .site-menu__link {
