@@ -2,6 +2,7 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-dark-grey;
+  margin: 0;
 }
 .contacts__text {
   font-family: $font-heading;
@@ -10,12 +11,23 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-black;
+  margin: 0;
 }
 .contacts__sales {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 26px 0;
+}
+.contacts {
+  height: 474px;
+}
+.contacts__map {
+  display: block;
+  margin: 0 auto;
 }
 @media (min-width: $breakpoint-tablet) {
-  .contacts__sales{
+  .contacts__sales {
     width: 628px;
     justify-content: space-between;
     margin: 0 auto;
@@ -41,5 +53,4 @@
     padding-top: 20px;
     box-sizing: border-box;
   }
-  
 }

@@ -29,14 +29,15 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 440px;
-    height: 36px;
+    justify-content: space-between;
+    min-width: 440px;
+    min-height: 36px;
     border: none;
+    margin-top: 40px;
+    margin-left: 94px;
   }
   .site-menu__item {
-    padding-top: 18px;
-    padding-bottom: 18px;
+   padding: 0;
     border: none;
   }
   .site-menu__link {
