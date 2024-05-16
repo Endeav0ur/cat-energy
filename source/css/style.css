@@ -40,8 +40,19 @@
   padding-bottom: 17px;
 }
 
+.page-header__main-nav--open .page-header__toggle {
+  background-image: url(../img/icons/icon_close.svg);
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  border: none;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  background-position: center;
+  cursor: pointer;
+}
+
 .page-header__main-nav--closed .page-header__toggle {
-  display: block;
   background-image: url(../img/icons/burger.svg);
   background-color: #ffffff;
   width: 40px;
@@ -53,6 +64,11 @@
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .page-header__main-nav--closed .page-header__list {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .page-header__toggle {
     display: none;
