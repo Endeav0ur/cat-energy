@@ -25,6 +25,7 @@
   padding: 20px;
   background-position: center;
   cursor: pointer;
+  z-index: 2;
 }
 .page-header__main-nav--closed .page-header__toggle{
   background-image: url(../img/icons/burger.svg);
