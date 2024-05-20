@@ -12,11 +12,14 @@
 @media (min-width: $breakpoint-tablet) {
   .transformation {
     background-color: $color-grey;
+    height: 462px;
+    padding: 0;
   }
   .transformation__switcher {
     width: 592px;
     justify-content: space-around;
     gap: 13px;
+    margin-bottom: 55px;
   }
 
   .transformation__fat-cat {
@@ -25,7 +28,7 @@
   }
 }
 @media (min-width: $breakpoint-desktop) {
-    .transformation {
-        background-color: $color-basic-grey;
-      }
+  .transformation {
+    background-color: $color-basic-grey;
+  }
 }
