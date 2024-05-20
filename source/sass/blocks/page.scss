@@ -6,3 +6,8 @@ font-size: 14px;
 line-height: 18px;
 font-weight: 400;
 }
+@media (min-width: $breakpoint-desktop){
+    .page{
+    height: 2809px;
+    }
+}

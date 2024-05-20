@@ -21,6 +21,11 @@
   font-weight: 400;
 }
 
+@media (min-width: 1440px) {
+  .page {
+    height: 2809px;
+  }
+}
 .page-header__main-nav {
   width: 280px;
   height: 150px;
@@ -238,8 +243,8 @@
     width: 552px;
     height: 499px;
     position: absolute;
-    right: 200px;
-    bottom: 54px;
+    top: 90px;
+    right: 220px;
     z-index: -1;
   }
 
@@ -251,11 +256,14 @@
   }
 
   .promo__title {
+    display: inline-block;
+    width: 414px;
     margin-left: 80px;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 40px;
     margin-top: 111px;
+    text-align: left;
   }
 
   .promo__slogan {
