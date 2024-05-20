@@ -11,17 +11,16 @@
 
 <body class="page__body">
   <header class="page__header page-header">
-    <nav class="page-header__main-nav page-header__main-nav--open">
+    <nav class="page-header__main-nav page-header__main-nav--open page-header__main-nav--nojs">
       <div class="page-header__bar">
         <a class="page-header__logo logo" href="index.html">
-          <img class="logo__img" src="./img/logo/logo-mobile.svg" alt="Логотип мобилльнной версии"
-            width="33" height="37">
-            <!-- <img class="logo__img" src="./img/logo/logo-tablet.svg" alt="Логотип планшетной версии"
+          <img class="logo__img" src="./img/logo/logo-mobile.svg" alt="Логотип мобилльнной версии" width="33"
+            height="37">
+          <!-- <img class="logo__img" src="./img/logo/logo-tablet.svg" alt="Логотип планшетной версии"
             width="61" height="37"> -->
-            <!-- <img class="logo__img" src="./img/logo/logo-desktop.svg" alt="Логотип десктопной версии"
+          <!-- <img class="logo__img" src="./img/logo/logo-desktop.svg" alt="Логотип десктопной версии"
             width="202" height="59"> -->
-          <img class="logo__brand" src="./img/logo/logo-title.svg" alt="Название Кэт Энерджи"
-            width="101" height="18">
+          <img class="logo__brand" src="./img/logo/logo-title.svg" alt="Название Кэт Энерджи" width="101" height="18">
         </a>
         <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -41,6 +40,23 @@
       </ul>
     </nav>
   </header>
+
+  <script>
+    var navMain = document.querySelector('page-header__main-nav');
+    var navToggle = document.querySelector('page-header__toggle');
+
+    navMain.classList.remove('page-header__main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('page-header__main-nav--closed')) {
+        navMain.classList.remove('page-header__main-nav--closed');
+        navMain.classList.add('page-header__main-nav--opened');
+      } else {
+        navMain.classList.add('page-header__main-nav--closed');
+        navMain.classList.remove('page-header__main-nav--opened');
+      }
+    });
+  </script>
 
   <main class="page__main page-main">
     <section class="page-main__section promo container">

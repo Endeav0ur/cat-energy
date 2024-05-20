@@ -38,6 +38,9 @@
   background-position: center;
   cursor: pointer;
 }
+// .page-header__main-nav--nojs .page-header__toggle{
+//   display: none;
+// }
 @media (max-width:$breakpoint-mobile-only){
   .page-header__main-nav--closed .page-header__list{
     display: none;
@@ -68,6 +71,9 @@
   }
 }
 @media (min-width: $breakpoint-desktop) {
+  // .page-header__main-nav {
+  //   margin-bottom: 0;
+  // }
   .page-header__main-nav--open {
     width: 1220px;
     margin-top: 53px;
