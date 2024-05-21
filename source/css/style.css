@@ -161,6 +161,15 @@
   margin-bottom: 20px;
 }
 
+.promo__button:hover {
+  background-color: #5eaa2f;
+}
+
+.promo__button:active {
+  background-color: #5eaa2f;
+  opacity: 0.3;
+}
+
 .promo__slogan {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -995,6 +1004,14 @@
   color: #000000;
 }
 
+.site-menu__link:hover {
+  opacity: 0.6;
+}
+
+.site-menu__link:focus {
+  opacity: 0.3;
+}
+
 .site-menu {
   position: absolute;
   background-color: #ffffff;
@@ -1124,6 +1141,22 @@
 
 .logo__brand {
   margin-top: 13px;
+}
+
+.logo__brand:hover {
+  opacity: 0.8;
+}
+
+.logo__brand:active {
+  opacity: 0.6;
+}
+
+.logo__img:hover {
+  opacity: 0.8;
+}
+
+.logo__img:active {
+  opacity: 0.6;
 }
 
 @media (min-width: 768px) {

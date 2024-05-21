@@ -7,6 +7,12 @@
   text-decoration: none;
   color: $color-black;
 }
+.site-menu__link:hover {
+opacity: 0.6;
+}
+.site-menu__link:focus {
+  opacity: 0.3;
+}
 .site-menu {
   position: absolute;
   background-color: $color-white;

@@ -36,6 +36,13 @@
   margin: 0 auto;
   margin-bottom: 20px;
 }
+.promo__button:hover {
+background-color: $color-basic-green;
+}
+.promo__button:active {
+background-color: $color-basic-green;
+opacity: 0.3;
+}
 .promo__slogan {
   font-family: $font-heading;
   font-size: 14px;
@@ -120,6 +127,7 @@
     width: 244px;
     height: 54px;
   }
+
   .promo__title {
     display: inline-block;
     width: 414px;
