@@ -28,7 +28,6 @@
 }
 .page-header__main-nav {
   width: 280px;
-  height: 150px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
@@ -52,7 +51,7 @@
   border: none;
   width: 20px;
   height: 20px;
-  padding: 20px;
+  padding: 24px 20px;
   background-position: center;
   cursor: pointer;
   z-index: 2;
@@ -1006,6 +1005,7 @@
   border-top: 1px solid #E6E6E6;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .site-menu__item {
